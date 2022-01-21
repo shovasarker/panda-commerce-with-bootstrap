@@ -24,9 +24,9 @@
     </head>
 
     <body>
-        <header class=" navbar-light py-4">
-            <nav class="navbar navbar-expand-lg container">
-                <div class="container-fluid">
+        <header class=" navbar-light pt-5">
+            <nav class="navbar navbar-expand-lg fixed-top py-4 bg-white">
+                <div class="container">
                     <a class="navbar-brand" href="#">
                         <img src="./images/logo.png" alt="Panda Commerce Logo" width="160" height="25">
                     </a>
@@ -47,16 +47,16 @@
                         </form>
                         <div class="navbar-nav align-items-center ms-lg-4">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            <a class="nav-link" href="#">Shoes</a>
-                            <a class="nav-link" href="#">Backpack</a>
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
+                            <a class="nav-link" href="#backpack">Backpack</a>
+                            <a class="nav-link" href="#subscribe">Subscribe</a>
                         </div>
                     </div>
                 </div>
             </nav>
 
 
-            <section class="banner-section container my-4">
+            <section class="banner-section container mt-5 mb-4">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner p-3 p-lg-5 rounded-3 text-center text-lg-start"
                         style="background-color: #FEEAE9;">
@@ -180,7 +180,7 @@
 
             <section class="products-section py-5" style="background-color: #F4F4F4;">
                 <!-- Shoes Section Start -->
-                <section class="shoes-section container mb-5">
+                <section id="shoes" class="shoes-section container my-5">
                     <h1 class="mb-4">Shoes</h1>
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                         <div class="col">
@@ -230,7 +230,7 @@
                 </section>
                 <!-- Shoes Section End  -->
                 <!-- Backpack Section Start -->
-                <section class="backpack-section container mb-5">
+                <section id="backpack" class="backpack-section container my-5">
                     <h1 class="mb-4">Backpack</h1>
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                         <div class="col">
@@ -286,7 +286,7 @@
             <!-- Products Section end -->
 
             <!-- Subscribe section Start -->
-            <section
+            <section id="subscribe"
                 class="subscribe-section container rounded-3 d-flex flex-column justify-content-center align-items-center my-5 py-5"
                 style="background-color: #FFF2F1; height: 450px;">
                 <h1>LET'S STAY IN TOUCH</h1>
@@ -300,11 +300,11 @@
                 </div>
 
             </section>
-
-
-
         </main>
 
+        <footer class="mt-5 text-center">
+            <small>&copy; 2022 Panda Commerce. All Rights Reserved</small>
+        </footer>
     </body>
 
 </html>
